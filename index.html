@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html amp>
+<head>
+    <meta charset="utf-8">
+    <title>AMP Demo with GA4</title>
+    <link rel="canonical" href="self.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+</head>
+<body>
+    <h1>Welcome to the AMP Demo Page</h1>
+    <p>This is a simple AMP page to demonstrate integration with GA4.</p>
+    
+    <!-- Google Analytics 4 -->
+    <amp-analytics type="gtag" data-credentials="include">
+        <script type="application/json">
+        {
+          "vars": {
+            "gtag_id": "G-XXXXXXXXXX",  // Reemplaza con tu ID de medición de GA4
+            "config": {
+              "G-XXXXXXXXXX": {  // Reemplaza con tu ID de medición de GA4
+                "groups": "default"
+              }
+            }
+          }
+        }
+        </script>
+    </amp-analytics>
+</body>
+</html>
