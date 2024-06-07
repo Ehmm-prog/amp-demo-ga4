@@ -28,10 +28,22 @@
             "trackPageview": {
               "on": "visible",
               "request": "pageview"
+            },
+            "trackButtonClicked": {
+              "on": "click",
+              "selector": "#myButton",
+              "request": "event",
+              "vars": {
+                "event_name": "ButtonClicked",
+                "event_category": "ButtonInteraction"
+              }
             }
           }
         }
         </script>
     </amp-analytics>
+
+    <!-- Botón para generar el evento -->
+    <button id="myButton">Click Me</button>
 </body>
 </html>
